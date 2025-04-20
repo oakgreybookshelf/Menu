@@ -5,10 +5,30 @@ import menu
 
 def main():
     mymenu = menu.Menu()
+
+    # take input for food item 1
+
+    menuFood = input("Enter a food to add to the menu: ")
+    menuFoodCalories = int(input("Enter the food calorie count "))
+    menuFoodPrice = int(input("Enter the food price: "))
     
-    menu1 = menuitem.MenuItem("hamburger", 450, 10)
-    menu2 = menuitem.MenuItem("hot dog", 300, 9)
-    menu3 = menuitem.MenuItem("soda", 300, 5)
+    menu1 = menuitem.MenuItem(menuFood, menuFoodCalories, menuFoodPrice)
+
+    # take input for food item 2
+
+    menuFood = input("Enter a food to add to the menu: ")
+    menuFoodCalories = int(input("Enter the food calorie count "))
+    menuFoodPrice = int(input("Enter the food price: "))
+    
+    menu2 = menuitem.MenuItem(menuFood, menuFoodCalories, menuFoodPrice)
+
+    # take input for food item 3
+    
+    menuFood = input("Enter a food to add to the menu: ")
+    menuFoodCalories = int(input("Enter the food calorie count "))
+    menuFoodPrice = int(input("Enter the food price: "))
+    
+    menu3 = menuitem.MenuItem(menuFood, menuFoodCalories, menuFoodPrice)
     
     mymenu.additem(menu1)
     mymenu.additem(menu2)
@@ -22,6 +42,5 @@ def main():
     print("The total calories is", total)
     
 
-    
     
 main()
